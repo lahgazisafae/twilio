@@ -24,7 +24,7 @@ app.post('/sms', function(req, res) {
 
 const twiml = new MessagingResponse();
 
-  twiml.message('testing 123');
+  twiml.message('Hi, this is Culpability. Your incident has been logged. Your unique id # XXXX');
 
   res.writeHead(200, {'Content-Type': 'text/xml'});
   res.end(twiml.toString());
